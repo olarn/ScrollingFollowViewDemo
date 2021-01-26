@@ -13,6 +13,7 @@
 		370E93F525C0D5AA00D011A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370E93F325C0D5AA00D011A4 /* Main.storyboard */; };
 		370E93F725C0D5AC00D011A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370E93F625C0D5AC00D011A4 /* Assets.xcassets */; };
 		370E93FA25C0D5AC00D011A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370E93F825C0D5AC00D011A4 /* LaunchScreen.storyboard */; };
+		370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		370E93F625C0D5AC00D011A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370E93F925C0D5AC00D011A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370E93FB25C0D5AC00D011A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingFollowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */,
 				370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */,
-				370E93F125C0D5AA00D011A4 /* ViewController.swift */,
 				370E93F325C0D5AA00D011A4 /* Main.storyboard */,
+				370E93F125C0D5AA00D011A4 /* ViewController.swift */,
+				370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */,
 				370E93F625C0D5AC00D011A4 /* Assets.xcassets */,
 				370E93F825C0D5AC00D011A4 /* LaunchScreen.storyboard */,
 				370E93FB25C0D5AC00D011A4 /* Info.plist */,
@@ -140,6 +143,7 @@
 				370E93F225C0D5AA00D011A4 /* ViewController.swift in Sources */,
 				370E93EE25C0D5AA00D011A4 /* AppDelegate.swift in Sources */,
 				370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */,
+				370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
