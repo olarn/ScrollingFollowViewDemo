@@ -77,16 +77,24 @@
 				370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */,
 				370E93F325C0D5AA00D011A4 /* Main.storyboard */,
 				370E93F125C0D5AA00D011A4 /* ViewController.swift */,
-				37141DB725C3F3D600E9F69D /* Interactor.swift */,
-				37141DAC25C3F1FC00E9F69D /* Presenter.swift */,
 				37141DB025C3F27800E9F69D /* ViewController+TableView.swift */,
 				37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */,
+				37141DC025C3F84D00E9F69D /* VIP */,
 				370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */,
 				370E93F625C0D5AC00D011A4 /* Assets.xcassets */,
 				370E93F825C0D5AC00D011A4 /* LaunchScreen.storyboard */,
 				370E93FB25C0D5AC00D011A4 /* Info.plist */,
 			);
 			path = TryFollow;
+			sourceTree = "<group>";
+		};
+		37141DC025C3F84D00E9F69D /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				37141DB725C3F3D600E9F69D /* Interactor.swift */,
+				37141DAC25C3F1FC00E9F69D /* Presenter.swift */,
+			);
+			path = VIP;
 			sourceTree = "<group>";
 		};
 		642649129E187876F6E8FB09 /* Frameworks */ = {
