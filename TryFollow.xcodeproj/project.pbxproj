@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BEAE719AF695ECE3876ACD5 /* Pods_TryFollow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */; };
 		370E93EE25C0D5AA00D011A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */; };
 		370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */; };
 		370E93F225C0D5AA00D011A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E93F125C0D5AA00D011A4 /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		370E93F725C0D5AC00D011A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370E93F625C0D5AC00D011A4 /* Assets.xcassets */; };
 		370E93FA25C0D5AC00D011A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370E93F825C0D5AC00D011A4 /* LaunchScreen.storyboard */; };
 		370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */; };
+		37141DAD25C3F1FC00E9F69D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DAC25C3F1FC00E9F69D /* Presenter.swift */; };
+		37141DB125C3F27800E9F69D /* ViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DB025C3F27800E9F69D /* ViewController+TableView.swift */; };
+		37141DB425C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */; };
+		37141DB825C3F3D600E9F69D /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DB725C3F3D600E9F69D /* Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		066409CA88D3462F0C9C54D5 /* Pods-TryFollow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryFollow.release.xcconfig"; path = "Target Support Files/Pods-TryFollow/Pods-TryFollow.release.xcconfig"; sourceTree = "<group>"; };
 		370E93EA25C0D5AA00D011A4 /* TryFollow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryFollow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,12 @@
 		370E93F925C0D5AC00D011A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370E93FB25C0D5AC00D011A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingFollowView.swift; sourceTree = "<group>"; };
+		37141DAC25C3F1FC00E9F69D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		37141DB025C3F27800E9F69D /* ViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableView.swift"; sourceTree = "<group>"; };
+		37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ScrollFollowView.swift"; sourceTree = "<group>"; };
+		37141DB725C3F3D600E9F69D /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryFollow.debug.xcconfig"; path = "Target Support Files/Pods-TryFollow/Pods-TryFollow.debug.xcconfig"; sourceTree = "<group>"; };
+		B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryFollow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEAE719AF695ECE3876ACD5 /* Pods_TryFollow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				370E93EC25C0D5AA00D011A4 /* TryFollow */,
 				370E93EB25C0D5AA00D011A4 /* Products */,
+				7C7335995813CF104965FAE1 /* Pods */,
+				642649129E187876F6E8FB09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +77,33 @@
 				370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */,
 				370E93F325C0D5AA00D011A4 /* Main.storyboard */,
 				370E93F125C0D5AA00D011A4 /* ViewController.swift */,
+				37141DB725C3F3D600E9F69D /* Interactor.swift */,
+				37141DAC25C3F1FC00E9F69D /* Presenter.swift */,
+				37141DB025C3F27800E9F69D /* ViewController+TableView.swift */,
+				37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */,
 				370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */,
 				370E93F625C0D5AC00D011A4 /* Assets.xcassets */,
 				370E93F825C0D5AC00D011A4 /* LaunchScreen.storyboard */,
 				370E93FB25C0D5AC00D011A4 /* Info.plist */,
 			);
 			path = TryFollow;
+			sourceTree = "<group>";
+		};
+		642649129E187876F6E8FB09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C7335995813CF104965FAE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */,
+				066409CA88D3462F0C9C54D5 /* Pods-TryFollow.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 370E93FE25C0D5AC00D011A4 /* Build configuration list for PBXNativeTarget "TryFollow" */;
 			buildPhases = (
+				E61DA6037C0E430D8EDCA8C2 /* [CP] Check Pods Manifest.lock */,
 				370E93E625C0D5AA00D011A4 /* Sources */,
 				370E93E725C0D5AA00D011A4 /* Frameworks */,
 				370E93E825C0D5AA00D011A4 /* Resources */,
+				BEEA9CAC9EB8EF037343CDEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +173,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BEEA9CAC9EB8EF037343CDEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TryFollow/Pods-TryFollow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TryFollow/Pods-TryFollow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TryFollow/Pods-TryFollow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61DA6037C0E430D8EDCA8C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TryFollow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		370E93E625C0D5AA00D011A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,8 +222,12 @@
 			files = (
 				370E93F225C0D5AA00D011A4 /* ViewController.swift in Sources */,
 				370E93EE25C0D5AA00D011A4 /* AppDelegate.swift in Sources */,
+				37141DB425C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift in Sources */,
+				37141DB125C3F27800E9F69D /* ViewController+TableView.swift in Sources */,
 				370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */,
 				370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */,
+				37141DB825C3F3D600E9F69D /* Interactor.swift in Sources */,
+				37141DAD25C3F1FC00E9F69D /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +371,7 @@
 		};
 		370E93FF25C0D5AC00D011A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +390,7 @@
 		};
 		370E940025C0D5AC00D011A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066409CA88D3462F0C9C54D5 /* Pods-TryFollow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

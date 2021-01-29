@@ -5,4 +5,19 @@
 //  Created by Olarn U. on 29/1/2564 BE.
 //
 
-import Foundation
+import UIKit
+
+extension ViewController: UITableViewDelegate {
+    
+    func setupScrollingFollowView() {
+        let scrollingFollowViewHeight = scrollingFollowView.frame.size.height
+        scrollingFollowView.setup(
+            constraint: topConstraint,
+            maxFollowPoint: scrollingFollowViewHeight,
+            minFollowPoint: 0)
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollingFollowView.didScroll(scrollView)
+    }
+}
