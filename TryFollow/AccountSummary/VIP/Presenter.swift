@@ -8,17 +8,25 @@
 import Foundation
 
 protocol PresenterPrototype {
-    var viewController: ViewControllerProtocol? { get set }
+    var viewController: AccountSummaryViewControllerProtocol? { get set }
     func showProvince(provinces: [String])
 }
 
 class Presenter: PresenterPrototype {
     
-    weak var viewController: ViewControllerProtocol?
+    weak var viewController: AccountSummaryViewControllerProtocol?
     
     func showProvince(provinces: [String]) {
         if let vc = viewController {
             vc.showProvince(provinces: provinces)
+            
+            present(productGroups: ["Deposit", "Credit Card", "Investment", "Loan", "Insurance"])
         }
     }
+    
+    func present(productGroups: [String]) {
+        viewController?.present(productGroups: productGroups)
+    }
+    
+
 }
