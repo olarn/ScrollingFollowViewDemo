@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PagingKit
 
 protocol ViewControllerProtocol: class {
     func showProvince(provinces: [String])
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollingFollowView: ScrollingFollowView!
+    
+    var menuViewController: PagingMenuViewController!
+    var contentViewController: PagingContentViewController!
     
     var interactor: InteractorProtocol = Interactor()
     var presenter: PresenterPrototype = Presenter()
@@ -42,6 +46,15 @@ class ViewController: UIViewController {
     func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PagingMenuViewController {
+            menuViewController = vc
+        }
+        if let vc = segue.destination as? PagingContentViewController {
+            contentViewController = vc
+        }
     }
 }
 
