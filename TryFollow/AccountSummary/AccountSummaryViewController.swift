@@ -15,13 +15,20 @@ protocol AccountSummaryViewControllerProtocol: class {
 
 class AccountSummaryViewController: UIViewController {
     
-    static var viewController: (UIColor) -> UIViewController = { (color) in
+    static var viewController: (UIColor, UITableViewDataSource?, UITableViewDelegate?) -> UIViewController = { color, tableViewDatasource, tableViewDelegate in
         let vc = UIViewController()
         vc.view.backgroundColor = color
+        let tableViewController = UITableViewController()
+        if let tb = tableViewController.tableView {
+            tb.frame = vc.view.frame
+            tb.dataSource = tableViewDatasource
+            tb.delegate = tableViewDelegate
+            vc.view.addSubview(tb)
+        }
         return vc
     }
     
-    var dataSource = [(menuTitle: "", vc: viewController(.clear))]
+    var productGroups = [(menuTitle: "", vc: viewController(.clear, nil, nil))]
 
     let tableViewController = UITableViewController()
     var tableView: UITableView!
@@ -46,7 +53,7 @@ class AccountSummaryViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        interactor.fetch()
+        interactor.fetchAccountSummary()
     }
     
     func setupVIP() {
@@ -76,12 +83,12 @@ extension AccountSummaryViewController: AccountSummaryViewControllerProtocol {
     }
     
     func present(productGroups: [String]) {
-        dataSource = [
-            (menuTitle: "Deposit", vc: AccountSummaryViewController.viewController(.red)),
-            (menuTitle: "Credit Card", vc: AccountSummaryViewController.viewController(.blue)),
-            (menuTitle: "Investment", vc: AccountSummaryViewController.viewController(.yellow)),
-            (menuTitle: "Loan", vc: AccountSummaryViewController.viewController(.blue)),
-            (menuTitle: "Insurance", vc: AccountSummaryViewController.viewController(.yellow)),
+        self.productGroups = [
+            (menuTitle: "Deposit", vc: AccountSummaryViewController.viewController(.red, self, self)),
+            (menuTitle: "Credit Card", vc: AccountSummaryViewController.viewController(.blue, self, self)),
+            (menuTitle: "Investment", vc: AccountSummaryViewController.viewController(.yellow, self, self)),
+            (menuTitle: "Loan", vc: AccountSummaryViewController.viewController(.blue, self, self)),
+            (menuTitle: "Insurance", vc: AccountSummaryViewController.viewController(.yellow, self, self)),
         ]
         menuViewController.reloadData()
         contentViewController.reloadData()

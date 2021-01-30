@@ -9,14 +9,14 @@ import Foundation
 
 protocol PresenterPrototype {
     var viewController: AccountSummaryViewControllerProtocol? { get set }
-    func showProvince(provinces: [String])
+    func reloadPage(provinces: [String])
 }
 
 class Presenter: PresenterPrototype {
     
     weak var viewController: AccountSummaryViewControllerProtocol?
     
-    func showProvince(provinces: [String]) {
+    func reloadPage(provinces: [String]) {
         if let vc = viewController {
             vc.showProvince(provinces: provinces)
             

@@ -22,7 +22,8 @@
 		37141DD825C4FC5300E9F69D /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141DD525C4FC5300E9F69D /* MenuCell.xib */; };
 		37141DD925C4FC5300E9F69D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DD625C4FC5300E9F69D /* MenuCell.swift */; };
 		37141DDA25C4FC5300E9F69D /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141DD725C4FC5300E9F69D /* FocusView.xib */; };
-		37141DDE25C4FEDF00E9F69D /* AccountSummaryViewController+PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingView.swift */; };
+		37141DDE25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift */; };
+		37141DED25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DEC25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,8 @@
 		37141DD525C4FC5300E9F69D /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		37141DD625C4FC5300E9F69D /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		37141DD725C4FC5300E9F69D /* FocusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
-		37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+PagingView.swift"; sourceTree = "<group>"; };
+		37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+PagingMenuView.swift"; sourceTree = "<group>"; };
+		37141DEC25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+PagingContentView.swift"; sourceTree = "<group>"; };
 		5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryFollow.debug.xcconfig"; path = "Target Support Files/Pods-TryFollow/Pods-TryFollow.debug.xcconfig"; sourceTree = "<group>"; };
 		B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryFollow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,7 +119,9 @@
 			children = (
 				37141DB025C3F27800E9F69D /* AccountSummaryViewController+TableView.swift */,
 				37141DB325C3F2AB00E9F69D /* AccountSummaryViewController+ScrollFollowView.swift */,
-				37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingView.swift */,
+				37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift */,
+				37141DEC25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift */,
+				37141DC325C4F37600E9F69D /* PagingCompartment */,
 			);
 			path = "AccountSummary+Delegate";
 			sourceTree = "<group>";
@@ -128,7 +132,6 @@
 				370E93F125C0D5AA00D011A4 /* AccountSummaryViewController.swift */,
 				37141DE525C4FF4900E9F69D /* AccountSummary+Delegate */,
 				37141DC025C3F84D00E9F69D /* VIP */,
-				37141DC325C4F37600E9F69D /* PagingCompartment */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -271,9 +274,10 @@
 				37141DD925C4FC5300E9F69D /* MenuCell.swift in Sources */,
 				37141DB425C3F2AB00E9F69D /* AccountSummaryViewController+ScrollFollowView.swift in Sources */,
 				37141DB125C3F27800E9F69D /* AccountSummaryViewController+TableView.swift in Sources */,
+				37141DED25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift in Sources */,
 				370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */,
 				370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */,
-				37141DDE25C4FEDF00E9F69D /* AccountSummaryViewController+PagingView.swift in Sources */,
+				37141DDE25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift in Sources */,
 				37141DB825C3F3D600E9F69D /* Interactor.swift in Sources */,
 				37141DAD25C3F1FC00E9F69D /* Presenter.swift in Sources */,
 			);
