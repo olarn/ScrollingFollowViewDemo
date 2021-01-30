@@ -27,13 +27,11 @@ open class ScrollingFollowView: UIView {
     fileprivate var delayBuffer: CGFloat = 0
     
     open private(set) var allowHalfDisplay = false
-    
+
     open func setup(constraint cons: NSLayoutConstraint, maxFollowPoint: CGFloat, minFollowPoint: CGFloat, allowHalfDisplay: Bool = false) {
         constraint = cons
-        
         self.maxFollowPoint = -maxFollowPoint
         self.minFollowPoint = minFollowPoint
-        
         self.allowHalfDisplay = allowHalfDisplay
     }
     
@@ -64,7 +62,17 @@ open class ScrollingFollowView: UIView {
             }
             
         } else { // Follow scrolling.
-            
+
+            if isScrollUp(scrollView) {
+                print("isScrollUp constraint.constant \(constraint.constant) maxFollowPoint: \(maxFollowPoint)")
+                if constraint.constant <= maxFollowPoint {
+                    print("returned")
+                    return
+                } else {
+                    print("constraint.constant: \(constraint.constant)")
+                }
+            }
+
             if nextPoint < maxFollowPoint {
                 constraint.constant = maxFollowPoint
             } else if nextPoint > minFollowPoint {
@@ -79,6 +87,18 @@ open class ScrollingFollowView: UIView {
         layoutIfNeeded()
         
         previousPoint = currentPoint
+    }
+    
+    private var lastContentOffset: CGFloat = 0
+
+    private func isScrollUp(_ scrollView: UIScrollView) -> Bool {
+        let isUp = self.lastContentOffset < scrollView.contentOffset.y
+        self.lastContentOffset = scrollView.contentOffset.y
+        return isUp
+    }
+    
+    func donotResetScrollingPosition() {
+        lastContentOffset = -200
     }
     
     open func didEndScrolling(_ willDecelerate: Bool = false) {
