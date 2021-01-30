@@ -34,6 +34,7 @@ class AccountSummaryViewController: UIViewController {
     var tableView: UITableView!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollingFollowView: ScrollingFollowView!
+    var lastContentOffset: CGFloat = 0
     
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!

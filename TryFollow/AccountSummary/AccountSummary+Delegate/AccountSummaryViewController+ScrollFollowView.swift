@@ -16,8 +16,18 @@ extension AccountSummaryViewController: UITableViewDelegate {
             maxFollowPoint: scrollingFollowViewHeight - 110,
             minFollowPoint: 0)
     }
-
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if lastContentOffset > scrollView.contentOffset.y && lastContentOffset < scrollView.contentSize.height - scrollView.frame.height {
+            print("scroll down - lastContentOffset = \(lastContentOffset)")
+        } else if lastContentOffset < scrollView.contentOffset.y && scrollView.contentOffset.y > 0 {
+            print("scroll up - lastContentOffset = \(lastContentOffset)")
+        }
+        
+        lastContentOffset = scrollView.contentOffset.y < 0 ? 0 : scrollView.contentOffset.y
+        
         scrollingFollowView.didScroll(scrollView)
+    
     }
 }
