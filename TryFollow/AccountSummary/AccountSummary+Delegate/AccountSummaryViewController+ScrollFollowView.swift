@@ -18,16 +18,18 @@ extension AccountSummaryViewController: UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        if lastContentOffset > scrollView.contentOffset.y && lastContentOffset < scrollView.contentSize.height - scrollView.frame.height {
-            print("scroll down - lastContentOffset = \(lastContentOffset)")
-        } else if lastContentOffset < scrollView.contentOffset.y && scrollView.contentOffset.y > 0 {
-            print("scroll up - lastContentOffset = \(lastContentOffset)")
-        }
-        
-        lastContentOffset = scrollView.contentOffset.y < 0 ? 0 : scrollView.contentOffset.y
-        
-        scrollingFollowView.didScroll(scrollView)
-    
+//        if lastContentOffset > scrollView.contentOffset.y {
+//            lastContentOffset = scrollView.contentOffset.y < 0 ? 0 : scrollView.contentOffset.y
+//            print("scroll down - lastContentOffset = \(lastContentOffset)")
+//        }
+//        else
+//        if lastContentOffset < scrollView.contentOffset.y {
+//            lastContentOffset =
+//                scrollView.contentOffset.y < scrollView.contentSize.height ?
+//                scrollView.contentOffset.y :
+//                scrollView.contentSize.height
+//            print("scroll up - lastContentOffset = \(lastContentOffset)")
+//        }
+        scrollingFollowView.didScroll(scrollView, parallaxRatio: 0.6)
     }
 }

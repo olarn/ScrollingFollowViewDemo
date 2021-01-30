@@ -42,7 +42,7 @@ open class ScrollingFollowView: UIView {
         pointOfStartingShowing = showingPoint
     }
     
-    open func didScroll(_ scrollView: UIScrollView) {
+    open func didScroll(_ scrollView: UIScrollView, parallaxRatio: CGFloat = 1.0) {
         let currentPoint = -scrollView.contentOffset.y
         
         let differencePoint = currentPoint - previousPoint
@@ -70,9 +70,10 @@ open class ScrollingFollowView: UIView {
             } else if nextPoint > minFollowPoint {
                 constraint.constant = minFollowPoint
             } else {
-                constraint.constant += differencePoint
+                var ratio = parallaxRatio > 1.0 ? 1.0 : parallaxRatio
+                ratio = ratio <= 0.0 ? 1.0 : ratio
+                constraint.constant += differencePoint * ratio
             }
-            
         }
         
         layoutIfNeeded()
