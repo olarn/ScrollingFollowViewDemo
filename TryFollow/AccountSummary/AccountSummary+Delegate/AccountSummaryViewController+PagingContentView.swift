@@ -20,12 +20,8 @@ extension AccountSummaryViewController: PagingContentViewControllerDataSource {
 
 extension AccountSummaryViewController: PagingContentViewControllerDelegate {
     func contentViewController(viewController: PagingContentViewController, didManualScrollOn index: Int, percent: CGFloat) {
-        
-        tableView.setContentOffset(tableView.contentOffset, animated: false)
- 
         // Need to tell scrollFollwingView to prevent it to reset position to zero
         scrollingFollowView.donotResetScrollingPosition()
-
         menuViewController.scroll(index: index, percent: percent, animated: false)
     }
 }

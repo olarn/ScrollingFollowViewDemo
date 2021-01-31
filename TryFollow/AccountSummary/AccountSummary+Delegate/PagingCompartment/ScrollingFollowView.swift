@@ -64,12 +64,8 @@ open class ScrollingFollowView: UIView {
         } else { // Follow scrolling.
 
             if isScrollUp(scrollView) {
-                print("isScrollUp constraint.constant \(constraint.constant) maxFollowPoint: \(maxFollowPoint)")
                 if constraint.constant <= maxFollowPoint {
-                    print("returned")
                     return
-                } else {
-                    print("constraint.constant: \(constraint.constant)")
                 }
             }
 

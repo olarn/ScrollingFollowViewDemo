@@ -9,12 +9,6 @@ import UIKit
 
 extension AccountSummaryViewController: UITableViewDataSource {
     
-    func setupTableView() {
-        tableView = tableViewController.tableView
-        tableView.dataSource = self
-        tableView.delegate = self
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }

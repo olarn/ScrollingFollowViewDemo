@@ -38,12 +38,8 @@ extension AccountSummaryViewController: PagingMenuViewControllerDataSource {
 
 extension AccountSummaryViewController: PagingMenuViewControllerDelegate {
     func menuViewController(viewController: PagingMenuViewController, didSelect page: Int, previousPage: Int) {
-        
-        tableView.setContentOffset(tableView.contentOffset, animated: false)
-        
         // Need to tell scrollFollwingView to prevent it to reset position to zero
         scrollingFollowView.donotResetScrollingPosition()
-
         contentViewController.scroll(to: page, animated: true)        
     }
 }

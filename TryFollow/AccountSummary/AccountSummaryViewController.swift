@@ -20,6 +20,7 @@ class AccountSummaryViewController: UIViewController {
         vc.view.backgroundColor = color
         let tableViewController = UITableViewController()
         if let tb = tableViewController.tableView {
+            tb.showsVerticalScrollIndicator = false
             tb.frame = vc.view.frame
             tb.dataSource = tableViewDatasource
             tb.delegate = tableViewDelegate
@@ -46,7 +47,6 @@ class AccountSummaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupVIP()
-        setupTableView()
         setupScrollingFollowView()
         setupPagingView()
     }
@@ -79,7 +79,6 @@ extension AccountSummaryViewController: AccountSummaryViewControllerProtocol {
     
     func showProvince(provinces: [String]) {
         items = provinces
-        tableView.reloadData()
     }
     
     func present(productGroups: [String]) {
