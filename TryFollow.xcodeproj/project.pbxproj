@@ -24,6 +24,7 @@
 		37141DDA25C4FC5300E9F69D /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141DD725C4FC5300E9F69D /* FocusView.xib */; };
 		37141DDE25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift */; };
 		37141DED25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DEC25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift */; };
+		3721C7DD25C664A10076057E /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721C7DC25C664A10076057E /* FocusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		37141DD725C4FC5300E9F69D /* FocusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
 		37141DDD25C4FEDF00E9F69D /* AccountSummaryViewController+PagingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+PagingMenuView.swift"; sourceTree = "<group>"; };
 		37141DEC25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+PagingContentView.swift"; sourceTree = "<group>"; };
+		3721C7DC25C664A10076057E /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryFollow.debug.xcconfig"; path = "Target Support Files/Pods-TryFollow/Pods-TryFollow.debug.xcconfig"; sourceTree = "<group>"; };
 		B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryFollow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */,
 				37141DD625C4FC5300E9F69D /* MenuCell.swift */,
 				37141DD525C4FC5300E9F69D /* MenuCell.xib */,
+				3721C7DC25C664A10076057E /* FocusView.swift */,
 				37141DD725C4FC5300E9F69D /* FocusView.xib */,
 			);
 			path = PagingCompartment;
@@ -274,6 +277,7 @@
 				37141DD925C4FC5300E9F69D /* MenuCell.swift in Sources */,
 				37141DB425C3F2AB00E9F69D /* AccountSummaryViewController+ScrollFollowView.swift in Sources */,
 				37141DB125C3F27800E9F69D /* AccountSummaryViewController+TableView.swift in Sources */,
+				3721C7DD25C664A10076057E /* FocusView.swift in Sources */,
 				37141DED25C5194B00E9F69D /* AccountSummaryViewController+PagingContentView.swift in Sources */,
 				370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */,
 				370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */,
