@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGa-Q3-A3g" customClass="ScrollingFollowView" customModule="TryFollow" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="207"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="191"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-9b-etv">
-                                        <rect key="frame" x="0.0" y="147" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="135" width="414" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="t4C-Mv-DLC"/>
@@ -41,15 +41,15 @@
                                     <constraint firstAttribute="trailing" secondItem="GR3-9b-etv" secondAttribute="trailing" id="4CS-4l-5QX"/>
                                     <constraint firstItem="GR3-9b-etv" firstAttribute="leading" secondItem="jGa-Q3-A3g" secondAttribute="leading" id="96y-gU-6Hr"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Avv-o2-dxa" secondAttribute="trailing" constant="20" symbolic="YES" id="CHN-hf-NJ4"/>
-                                    <constraint firstAttribute="height" constant="207" id="Gqg-hH-vdA"/>
+                                    <constraint firstAttribute="height" constant="191" id="Gqg-hH-vdA"/>
                                     <constraint firstItem="GR3-9b-etv" firstAttribute="leading" secondItem="jGa-Q3-A3g" secondAttribute="leading" id="NWg-vS-guM"/>
-                                    <constraint firstItem="GR3-9b-etv" firstAttribute="top" secondItem="Avv-o2-dxa" secondAttribute="bottom" constant="52" id="a3I-RP-J5g"/>
+                                    <constraint firstItem="GR3-9b-etv" firstAttribute="top" secondItem="Avv-o2-dxa" secondAttribute="bottom" constant="40" id="a3I-RP-J5g"/>
                                     <constraint firstItem="Avv-o2-dxa" firstAttribute="leading" secondItem="jGa-Q3-A3g" secondAttribute="leading" constant="20" symbolic="YES" id="al4-75-Sh2"/>
                                     <constraint firstItem="Avv-o2-dxa" firstAttribute="top" secondItem="jGa-Q3-A3g" secondAttribute="top" constant="52" id="xtK-t4-bkA"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-mF-6Sx">
-                                <rect key="frame" x="0.0" y="207" width="414" height="655"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="671"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="HLH-Ko-DgC" kind="embed" id="Q2x-JR-BgN"/>
@@ -97,7 +97,7 @@
             <objects>
                 <viewController id="HLH-Ko-DgC" customClass="PagingContentViewController" customModule="PagingKit" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUA-85-bfL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="655"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="aT9-ci-hn2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

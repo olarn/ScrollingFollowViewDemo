@@ -39,8 +39,9 @@ class AccountSummaryViewController: UIViewController {
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
     
-    var interactor: InteractorProtocol = Interactor()
-    var presenter: PresenterPrototype = Presenter()
+    var interactor: AccountSummaryInteractorProtocol = AccountSummaryInteractor()
+    var presenter: AccountSummaryPresenterProtocol = AccountSummaryPresenter()
+    var worker: AccountSummaryWorkerProtocol = AccountSummaryWorker()
     
     var items = [String]()
     
@@ -58,6 +59,8 @@ class AccountSummaryViewController: UIViewController {
     
     func setupVIP() {
         interactor.presenter = presenter
+        interactor.worker = worker
+        worker.interactor = interactor
         presenter.viewController = self
     }
     

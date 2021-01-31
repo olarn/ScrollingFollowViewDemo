@@ -13,7 +13,7 @@ extension AccountSummaryViewController: UITableViewDelegate {
         let scrollingFollowViewHeight = scrollingFollowView.frame.size.height
         scrollingFollowView.setup(
             constraint: topConstraint,
-            maxFollowPoint: scrollingFollowViewHeight - 110,
+            maxFollowPoint: scrollingFollowViewHeight - 100,
             minFollowPoint: 0)
     }
     

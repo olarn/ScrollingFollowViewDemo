@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol PresenterPrototype {
+protocol AccountSummaryPresenterProtocol {
     var viewController: AccountSummaryViewControllerProtocol? { get set }
     func reloadPage(provinces: [String])
 }
 
-class Presenter: PresenterPrototype {
+class AccountSummaryPresenter: AccountSummaryPresenterProtocol {
     
     weak var viewController: AccountSummaryViewControllerProtocol?
     
