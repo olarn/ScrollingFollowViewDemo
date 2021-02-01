@@ -67,8 +67,12 @@ open class ScrollingFollowView: UIView {
                 if constraint.constant <= maxFollowPoint {
                     return
                 }
+            } else {
+                if constraint.constant == minFollowPoint {
+                    return
+                }
             }
-
+ 
             if nextPoint < maxFollowPoint {
                 constraint.constant = maxFollowPoint
             } else if nextPoint > minFollowPoint {
@@ -92,7 +96,7 @@ open class ScrollingFollowView: UIView {
         self.lastContentOffset = scrollView.contentOffset.y
         return isUp
     }
-    
+
     func donotResetScrollingPosition() {
         lastContentOffset = -200
     }

@@ -30,7 +30,7 @@
                                         </connections>
                                     </containerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avv-o2-dxa">
-                                        <rect key="frame" x="20" y="52" width="219" height="43"/>
+                                        <rect key="frame" x="20" y="50" width="219" height="43"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -43,9 +43,9 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Avv-o2-dxa" secondAttribute="trailing" constant="20" symbolic="YES" id="CHN-hf-NJ4"/>
                                     <constraint firstAttribute="height" constant="191" id="Gqg-hH-vdA"/>
                                     <constraint firstItem="GR3-9b-etv" firstAttribute="leading" secondItem="jGa-Q3-A3g" secondAttribute="leading" id="NWg-vS-guM"/>
-                                    <constraint firstItem="GR3-9b-etv" firstAttribute="top" secondItem="Avv-o2-dxa" secondAttribute="bottom" constant="40" id="a3I-RP-J5g"/>
+                                    <constraint firstItem="GR3-9b-etv" firstAttribute="top" secondItem="Avv-o2-dxa" secondAttribute="bottom" constant="42" id="a3I-RP-J5g"/>
                                     <constraint firstItem="Avv-o2-dxa" firstAttribute="leading" secondItem="jGa-Q3-A3g" secondAttribute="leading" constant="20" symbolic="YES" id="al4-75-Sh2"/>
-                                    <constraint firstItem="Avv-o2-dxa" firstAttribute="top" secondItem="jGa-Q3-A3g" secondAttribute="top" constant="52" id="xtK-t4-bkA"/>
+                                    <constraint firstItem="Avv-o2-dxa" firstAttribute="top" secondItem="jGa-Q3-A3g" secondAttribute="top" constant="50" id="xtK-t4-bkA"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-mF-6Sx">

@@ -11,6 +11,7 @@ extension AccountSummaryViewController: UITableViewDelegate {
     
     func setupScrollingFollowView() {
         let scrollingFollowViewHeight = scrollingFollowView.frame.size.height
+        scrollingFollowView.setupDelayPoints(pointOfStartingHiding: 20, pointOfStartingShowing: 20)
         scrollingFollowView.setup(
             constraint: topConstraint,
             maxFollowPoint: scrollingFollowViewHeight - 100,
@@ -18,6 +19,7 @@ extension AccountSummaryViewController: UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         scrollView.decelerationRate = .init(rawValue: 0.7)
         scrollingFollowView.didScroll(scrollView, parallaxRatio: 0.6)
     }
