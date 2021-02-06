@@ -90,7 +90,7 @@
 				370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */,
 				370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */,
 				370E93F325C0D5AA00D011A4 /* Main.storyboard */,
-				37141DE725C4FF7200E9F69D /* AccountSummary */,
+				37141DE725C4FF7200E9F69D /* Feature */,
 				370E93F625C0D5AC00D011A4 /* Assets.xcassets */,
 				370E93F825C0D5AC00D011A4 /* LaunchScreen.storyboard */,
 				370E93FB25C0D5AC00D011A4 /* Info.plist */,
@@ -120,7 +120,7 @@
 			path = PagingCompartment;
 			sourceTree = "<group>";
 		};
-		37141DE525C4FF4900E9F69D /* AccountSummary+Delegate */ = {
+		37141DE525C4FF4900E9F69D /* ViewController+Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				37141DB025C3F27800E9F69D /* ViewController+TableView.swift */,
@@ -128,18 +128,18 @@
 				37141DDD25C4FEDF00E9F69D /* ViewController+PagingMenuView.swift */,
 				37141DEC25C5194B00E9F69D /* ViewController+PagingContentView.swift */,
 			);
-			path = "AccountSummary+Delegate";
+			path = "ViewController+Delegate";
 			sourceTree = "<group>";
 		};
-		37141DE725C4FF7200E9F69D /* AccountSummary */ = {
+		37141DE725C4FF7200E9F69D /* Feature */ = {
 			isa = PBXGroup;
 			children = (
 				370E93F125C0D5AA00D011A4 /* ViewController.swift */,
-				37141DE525C4FF4900E9F69D /* AccountSummary+Delegate */,
+				37141DE525C4FF4900E9F69D /* ViewController+Delegate */,
 				37141DC325C4F37600E9F69D /* PagingCompartment */,
 				37141DC025C3F84D00E9F69D /* VIP */,
 			);
-			path = AccountSummary;
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		642649129E187876F6E8FB09 /* Frameworks */ = {
