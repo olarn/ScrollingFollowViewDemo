@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension AccountSummaryViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count

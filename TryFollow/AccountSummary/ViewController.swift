@@ -8,12 +8,12 @@
 import UIKit
 import PagingKit
 
-protocol AccountSummaryViewControllerProtocol: class {
+protocol ViewControllerProtocol: class {
     func showProvince(provinces: [String])
     func present(productGroups: [String])
 }
 
-class AccountSummaryViewController: UIViewController {
+class ViewController: UIViewController {
     
     static var viewController: (UIColor, UITableViewDataSource?, UITableViewDelegate?) -> UIViewController = { color, tableViewDatasource, tableViewDelegate in
         let vc = UIViewController()
@@ -39,9 +39,9 @@ class AccountSummaryViewController: UIViewController {
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
     
-    var interactor: AccountSummaryInteractorProtocol = AccountSummaryInteractor()
-    var presenter: AccountSummaryPresenterProtocol = AccountSummaryPresenter()
-    var worker: AccountSummaryWorkerProtocol = AccountSummaryWorker()
+    var interactor: InteractorProtocol = Interactor()
+    var presenter: PresenterProtocol = Presenter()
+    var worker: WorkerProtocol = Worker()
     
     var items = [String]()
     
@@ -78,7 +78,7 @@ class AccountSummaryViewController: UIViewController {
     }
 }
 
-extension AccountSummaryViewController: AccountSummaryViewControllerProtocol {
+extension ViewController: ViewControllerProtocol {
     
     func showProvince(provinces: [String]) {
         items = provinces
@@ -86,11 +86,11 @@ extension AccountSummaryViewController: AccountSummaryViewControllerProtocol {
     
     func present(productGroups: [String]) {
         self.productGroups = [
-            (menuTitle: "Deposit", vc: AccountSummaryViewController.viewController(.red, self, self)),
-            (menuTitle: "Credit Card", vc: AccountSummaryViewController.viewController(.blue, self, self)),
-            (menuTitle: "Investment", vc: AccountSummaryViewController.viewController(.yellow, self, self)),
-            (menuTitle: "Loan", vc: AccountSummaryViewController.viewController(.blue, self, self)),
-            (menuTitle: "Insurance", vc: AccountSummaryViewController.viewController(.yellow, self, self)),
+            (menuTitle: "Deposit", vc: ViewController.viewController(.red, self, self)),
+            (menuTitle: "Credit Card", vc: ViewController.viewController(.blue, self, self)),
+            (menuTitle: "Investment", vc: ViewController.viewController(.yellow, self, self)),
+            (menuTitle: "Loan", vc: ViewController.viewController(.blue, self, self)),
+            (menuTitle: "Insurance", vc: ViewController.viewController(.yellow, self, self)),
         ]
         menuViewController.reloadData()
         contentViewController.reloadData()

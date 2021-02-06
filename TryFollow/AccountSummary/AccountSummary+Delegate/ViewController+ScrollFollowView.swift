@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension AccountSummaryViewController: UITableViewDelegate {
+extension ViewController: UITableViewDelegate {
     
     func setupScrollingFollowView() {
         let scrollingFollowViewHeight = scrollingFollowView.frame.size.height

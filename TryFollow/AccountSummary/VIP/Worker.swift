@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol AccountSummaryWorkerProtocol {
-    var interactor: AccountSummaryInteractorProtocol? { get set }
+protocol WorkerProtocol {
+    var interactor: InteractorProtocol? { get set }
     func fetchAccounrSummary()
 }
 
-class AccountSummaryWorker: AccountSummaryWorkerProtocol {
-    weak var interactor: AccountSummaryInteractorProtocol?
+class Worker: WorkerProtocol {
+    weak var interactor: InteractorProtocol?
     
     func fetchAccounrSummary() {
         if let interactor = self.interactor {

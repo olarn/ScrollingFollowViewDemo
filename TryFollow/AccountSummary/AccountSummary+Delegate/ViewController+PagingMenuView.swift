@@ -8,7 +8,7 @@
 import Foundation
 import PagingKit
 
-extension AccountSummaryViewController: PagingMenuViewControllerDataSource {
+extension ViewController: PagingMenuViewControllerDataSource {
     
     func setupPagingView() {
         menuViewController.register(nib: UINib(nibName: "MenuCell", bundle: nil), forCellWithReuseIdentifier: "MenuCell")
@@ -36,7 +36,7 @@ extension AccountSummaryViewController: PagingMenuViewControllerDataSource {
     }
 }
 
-extension AccountSummaryViewController: PagingMenuViewControllerDelegate {
+extension ViewController: PagingMenuViewControllerDelegate {
     func menuViewController(viewController: PagingMenuViewController, didSelect page: Int, previousPage: Int) {
         // Need to tell scrollFollwingView to prevent it to reset position to zero
         scrollingFollowView.donotResetScrollingPosition()

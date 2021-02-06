@@ -8,7 +8,7 @@
 import Foundation
 import PagingKit
 
-extension AccountSummaryViewController: PagingContentViewControllerDataSource {
+extension ViewController: PagingContentViewControllerDataSource {
     func numberOfItemsForContentViewController(viewController: PagingContentViewController) -> Int {
         return productGroups.count
     }
@@ -18,7 +18,7 @@ extension AccountSummaryViewController: PagingContentViewControllerDataSource {
     }
 }
 
-extension AccountSummaryViewController: PagingContentViewControllerDelegate {
+extension ViewController: PagingContentViewControllerDelegate {
     func contentViewController(viewController: PagingContentViewController, didManualScrollOn index: Int, percent: CGFloat) {
         // Need to tell scrollFollwingView to prevent it to reset position to zero
         scrollingFollowView.donotResetScrollingPosition()
