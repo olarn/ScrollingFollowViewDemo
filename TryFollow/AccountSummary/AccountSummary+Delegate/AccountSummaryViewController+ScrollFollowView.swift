@@ -19,8 +19,17 @@ extension AccountSummaryViewController: UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        scrollView.decelerationRate = .init(rawValue: 0.7)
+        scrollView.decelerationRate = .init(rawValue: 0.8)
         scrollingFollowView.didScroll(scrollView, parallaxRatio: 0.6)
+    }
+
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        print(#function)
+        scrollingFollowView.didEndScrolling(true)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print(#function)
+        scrollingFollowView.didEndScrolling(true)
     }
 }

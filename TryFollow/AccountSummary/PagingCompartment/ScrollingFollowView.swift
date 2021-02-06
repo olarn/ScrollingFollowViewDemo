@@ -102,9 +102,9 @@ open class ScrollingFollowView: UIView {
     }
     
     open func didEndScrolling(_ willDecelerate: Bool = false) {
-        if !willDecelerate && !allowHalfDisplay {
+//        if !willDecelerate && !allowHalfDisplay {
             showOrHideIfNeeded()
-        }
+//        }
     }
     
     private func showOrHideIfNeeded() {
