@@ -14,7 +14,7 @@ extension ViewController: UITableViewDelegate {
         scrollingFollowView.setupDelayPoints(pointOfStartingHiding: 20, pointOfStartingShowing: 20)
         scrollingFollowView.setup(
             constraint: topConstraint,
-            maxFollowPoint: scrollingFollowViewHeight - 100,
+            maxFollowPoint: scrollingFollowViewHeight - 95,
             minFollowPoint: 0)
     }
     
@@ -24,12 +24,10 @@ extension ViewController: UITableViewDelegate {
     }
 
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        print(#function)
-        scrollingFollowView.didEndScrolling(true)
+        scrollingFollowView.didEndScrolling(decelerate)
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print(#function)
         scrollingFollowView.didEndScrolling(true)
     }
 }

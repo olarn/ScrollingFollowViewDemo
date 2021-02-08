@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BEAE719AF695ECE3876ACD5 /* Pods_TryFollow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */; };
 		370E93EE25C0D5AA00D011A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */; };
 		370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */; };
 		370E93F225C0D5AA00D011A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E93F125C0D5AA00D011A4 /* ViewController.swift */; };
@@ -19,17 +18,22 @@
 		37141DB125C3F27800E9F69D /* ViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DB025C3F27800E9F69D /* ViewController+TableView.swift */; };
 		37141DB425C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */; };
 		37141DB825C3F3D600E9F69D /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DB725C3F3D600E9F69D /* Interactor.swift */; };
-		37141DD825C4FC5300E9F69D /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141DD525C4FC5300E9F69D /* MenuCell.xib */; };
-		37141DD925C4FC5300E9F69D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DD625C4FC5300E9F69D /* MenuCell.swift */; };
-		37141DDA25C4FC5300E9F69D /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37141DD725C4FC5300E9F69D /* FocusView.xib */; };
 		37141DDE25C4FEDF00E9F69D /* ViewController+PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DDD25C4FEDF00E9F69D /* ViewController+PagingMenuView.swift */; };
 		37141DED25C5194B00E9F69D /* ViewController+PagingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37141DEC25C5194B00E9F69D /* ViewController+PagingContentView.swift */; };
-		3721C7DD25C664A10076057E /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721C7DC25C664A10076057E /* FocusView.swift */; };
 		3721C7E425C673560076057E /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721C7E325C673560076057E /* Worker.swift */; };
+		37C3024625D0F1230040B6D7 /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3023925D0F1230040B6D7 /* Array+NSLayoutConstraint.swift */; };
+		37C3024725D0F1230040B6D7 /* PagingMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3023A25D0F1230040B6D7 /* PagingMenuViewController.swift */; };
+		37C3024825D0F1230040B6D7 /* ContentAppearanceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3023B25D0F1230040B6D7 /* ContentAppearanceHandler.swift */; };
+		37C3024925D0F1230040B6D7 /* PagingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3023C25D0F1230040B6D7 /* PagingContentViewController.swift */; };
+		37C3024A25D0F1230040B6D7 /* UnderlineFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3023F25D0F1230040B6D7 /* UnderlineFocusView.swift */; };
+		37C3024B25D0F1230040B6D7 /* TitleLabelMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3024025D0F1230040B6D7 /* TitleLabelMenuViewCell.swift */; };
+		37C3024C25D0F1230040B6D7 /* OverlayMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3024225D0F1230040B6D7 /* OverlayMenuCell.swift */; };
+		37C3024D25D0F1230040B6D7 /* OverlayFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3024325D0F1230040B6D7 /* OverlayFocusView.swift */; };
+		37C3024E25D0F1230040B6D7 /* PagingKitProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3024425D0F1230040B6D7 /* PagingKitProxy.swift */; };
+		37C3024F25D0F1230040B6D7 /* PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3024525D0F1230040B6D7 /* PagingMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		066409CA88D3462F0C9C54D5 /* Pods-TryFollow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryFollow.release.xcconfig"; path = "Target Support Files/Pods-TryFollow/Pods-TryFollow.release.xcconfig"; sourceTree = "<group>"; };
 		370E93EA25C0D5AA00D011A4 /* TryFollow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryFollow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,15 +47,20 @@
 		37141DB025C3F27800E9F69D /* ViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableView.swift"; sourceTree = "<group>"; };
 		37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ScrollFollowView.swift"; sourceTree = "<group>"; };
 		37141DB725C3F3D600E9F69D /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		37141DD525C4FC5300E9F69D /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
-		37141DD625C4FC5300E9F69D /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		37141DD725C4FC5300E9F69D /* FocusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
 		37141DDD25C4FEDF00E9F69D /* ViewController+PagingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PagingMenuView.swift"; sourceTree = "<group>"; };
 		37141DEC25C5194B00E9F69D /* ViewController+PagingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PagingContentView.swift"; sourceTree = "<group>"; };
-		3721C7DC25C664A10076057E /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		3721C7E325C673560076057E /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
-		5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryFollow.debug.xcconfig"; path = "Target Support Files/Pods-TryFollow/Pods-TryFollow.debug.xcconfig"; sourceTree = "<group>"; };
-		B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryFollow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C3023825D0F1230040B6D7 /* PagingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingKit.h; sourceTree = "<group>"; };
+		37C3023925D0F1230040B6D7 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		37C3023A25D0F1230040B6D7 /* PagingMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuViewController.swift; sourceTree = "<group>"; };
+		37C3023B25D0F1230040B6D7 /* ContentAppearanceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentAppearanceHandler.swift; sourceTree = "<group>"; };
+		37C3023C25D0F1230040B6D7 /* PagingContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingContentViewController.swift; sourceTree = "<group>"; };
+		37C3023F25D0F1230040B6D7 /* UnderlineFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineFocusView.swift; sourceTree = "<group>"; };
+		37C3024025D0F1230040B6D7 /* TitleLabelMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleLabelMenuViewCell.swift; sourceTree = "<group>"; };
+		37C3024225D0F1230040B6D7 /* OverlayMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayMenuCell.swift; sourceTree = "<group>"; };
+		37C3024325D0F1230040B6D7 /* OverlayFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayFocusView.swift; sourceTree = "<group>"; };
+		37C3024425D0F1230040B6D7 /* PagingKitProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingKitProxy.swift; sourceTree = "<group>"; };
+		37C3024525D0F1230040B6D7 /* PagingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BEAE719AF695ECE3876ACD5 /* Pods_TryFollow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +79,6 @@
 			children = (
 				370E93EC25C0D5AA00D011A4 /* TryFollow */,
 				370E93EB25C0D5AA00D011A4 /* Products */,
-				7C7335995813CF104965FAE1 /* Pods */,
-				642649129E187876F6E8FB09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +93,7 @@
 		370E93EC25C0D5AA00D011A4 /* TryFollow */ = {
 			isa = PBXGroup;
 			children = (
+				37C3023725D0F1230040B6D7 /* PagingKit */,
 				370E93ED25C0D5AA00D011A4 /* AppDelegate.swift */,
 				370E93EF25C0D5AA00D011A4 /* SceneDelegate.swift */,
 				370E93F325C0D5AA00D011A4 /* Main.storyboard */,
@@ -112,10 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				370E940225C0D5B700D011A4 /* ScrollingFollowView.swift */,
-				37141DD625C4FC5300E9F69D /* MenuCell.swift */,
-				37141DD525C4FC5300E9F69D /* MenuCell.xib */,
-				3721C7DC25C664A10076057E /* FocusView.swift */,
-				37141DD725C4FC5300E9F69D /* FocusView.xib */,
 			);
 			path = PagingCompartment;
 			sourceTree = "<group>";
@@ -123,8 +126,8 @@
 		37141DE525C4FF4900E9F69D /* ViewController+Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				37141DB025C3F27800E9F69D /* ViewController+TableView.swift */,
 				37141DB325C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift */,
+				37141DB025C3F27800E9F69D /* ViewController+TableView.swift */,
 				37141DDD25C4FEDF00E9F69D /* ViewController+PagingMenuView.swift */,
 				37141DEC25C5194B00E9F69D /* ViewController+PagingContentView.swift */,
 			);
@@ -142,21 +145,46 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		642649129E187876F6E8FB09 /* Frameworks */ = {
+		37C3023725D0F1230040B6D7 /* PagingKit */ = {
 			isa = PBXGroup;
 			children = (
-				B46F76B5DC09DCE90C62C207 /* Pods_TryFollow.framework */,
+				37C3023825D0F1230040B6D7 /* PagingKit.h */,
+				37C3023925D0F1230040B6D7 /* Array+NSLayoutConstraint.swift */,
+				37C3023A25D0F1230040B6D7 /* PagingMenuViewController.swift */,
+				37C3023B25D0F1230040B6D7 /* ContentAppearanceHandler.swift */,
+				37C3023C25D0F1230040B6D7 /* PagingContentViewController.swift */,
+				37C3023D25D0F1230040B6D7 /* Menu Cells */,
+				37C3024425D0F1230040B6D7 /* PagingKitProxy.swift */,
+				37C3024525D0F1230040B6D7 /* PagingMenuView.swift */,
 			);
-			name = Frameworks;
+			path = PagingKit;
 			sourceTree = "<group>";
 		};
-		7C7335995813CF104965FAE1 /* Pods */ = {
+		37C3023D25D0F1230040B6D7 /* Menu Cells */ = {
 			isa = PBXGroup;
 			children = (
-				5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */,
-				066409CA88D3462F0C9C54D5 /* Pods-TryFollow.release.xcconfig */,
+				37C3023E25D0F1230040B6D7 /* Underline */,
+				37C3024125D0F1230040B6D7 /* Overlay */,
 			);
-			path = Pods;
+			path = "Menu Cells";
+			sourceTree = "<group>";
+		};
+		37C3023E25D0F1230040B6D7 /* Underline */ = {
+			isa = PBXGroup;
+			children = (
+				37C3023F25D0F1230040B6D7 /* UnderlineFocusView.swift */,
+				37C3024025D0F1230040B6D7 /* TitleLabelMenuViewCell.swift */,
+			);
+			path = Underline;
+			sourceTree = "<group>";
+		};
+		37C3024125D0F1230040B6D7 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				37C3024225D0F1230040B6D7 /* OverlayMenuCell.swift */,
+				37C3024325D0F1230040B6D7 /* OverlayFocusView.swift */,
+			);
+			path = Overlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +194,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 370E93FE25C0D5AC00D011A4 /* Build configuration list for PBXNativeTarget "TryFollow" */;
 			buildPhases = (
-				E61DA6037C0E430D8EDCA8C2 /* [CP] Check Pods Manifest.lock */,
 				370E93E625C0D5AA00D011A4 /* Sources */,
 				370E93E725C0D5AA00D011A4 /* Frameworks */,
 				370E93E825C0D5AA00D011A4 /* Resources */,
-				BEEA9CAC9EB8EF037343CDEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,55 +246,11 @@
 			files = (
 				370E93FA25C0D5AC00D011A4 /* LaunchScreen.storyboard in Resources */,
 				370E93F725C0D5AC00D011A4 /* Assets.xcassets in Resources */,
-				37141DD825C4FC5300E9F69D /* MenuCell.xib in Resources */,
-				37141DDA25C4FC5300E9F69D /* FocusView.xib in Resources */,
 				370E93F525C0D5AA00D011A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BEEA9CAC9EB8EF037343CDEF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TryFollow/Pods-TryFollow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TryFollow/Pods-TryFollow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TryFollow/Pods-TryFollow-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E61DA6037C0E430D8EDCA8C2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TryFollow-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		370E93E625C0D5AA00D011A4 /* Sources */ = {
@@ -277,14 +259,22 @@
 			files = (
 				3721C7E425C673560076057E /* Worker.swift in Sources */,
 				370E93F225C0D5AA00D011A4 /* ViewController.swift in Sources */,
+				37C3024825D0F1230040B6D7 /* ContentAppearanceHandler.swift in Sources */,
+				37C3024C25D0F1230040B6D7 /* OverlayMenuCell.swift in Sources */,
 				370E93EE25C0D5AA00D011A4 /* AppDelegate.swift in Sources */,
-				37141DD925C4FC5300E9F69D /* MenuCell.swift in Sources */,
+				37C3024A25D0F1230040B6D7 /* UnderlineFocusView.swift in Sources */,
+				37C3024625D0F1230040B6D7 /* Array+NSLayoutConstraint.swift in Sources */,
+				37C3024F25D0F1230040B6D7 /* PagingMenuView.swift in Sources */,
 				37141DB425C3F2AB00E9F69D /* ViewController+ScrollFollowView.swift in Sources */,
+				37C3024D25D0F1230040B6D7 /* OverlayFocusView.swift in Sources */,
 				37141DB125C3F27800E9F69D /* ViewController+TableView.swift in Sources */,
-				3721C7DD25C664A10076057E /* FocusView.swift in Sources */,
+				37C3024725D0F1230040B6D7 /* PagingMenuViewController.swift in Sources */,
+				37C3024E25D0F1230040B6D7 /* PagingKitProxy.swift in Sources */,
 				37141DED25C5194B00E9F69D /* ViewController+PagingContentView.swift in Sources */,
+				37C3024925D0F1230040B6D7 /* PagingContentViewController.swift in Sources */,
 				370E93F025C0D5AA00D011A4 /* SceneDelegate.swift in Sources */,
 				370E940325C0D5B700D011A4 /* ScrollingFollowView.swift in Sources */,
+				37C3024B25D0F1230040B6D7 /* TitleLabelMenuViewCell.swift in Sources */,
 				37141DDE25C4FEDF00E9F69D /* ViewController+PagingMenuView.swift in Sources */,
 				37141DB825C3F3D600E9F69D /* Interactor.swift in Sources */,
 				37141DAD25C3F1FC00E9F69D /* Presenter.swift in Sources */,
@@ -431,7 +421,6 @@
 		};
 		370E93FF25C0D5AC00D011A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5819AB105CB5948B5C6F57A4 /* Pods-TryFollow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,7 +440,6 @@
 		};
 		370E940025C0D5AC00D011A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066409CA88D3462F0C9C54D5 /* Pods-TryFollow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

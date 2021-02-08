@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PagingKit
+ 
 
 protocol ViewControllerProtocol: class {
     func showProvince(provinces: [String])
@@ -92,8 +92,8 @@ extension ViewController: ViewControllerProtocol {
             (menuTitle: "Loan", vc: ViewController.viewController(.blue, self, self)),
             (menuTitle: "Insurance", vc: ViewController.viewController(.yellow, self, self)),
         ]
-        menuViewController.reloadData()
-        contentViewController.reloadData()
+        menuViewController?.reloadData()
+        contentViewController?.reloadData()
     }
 }
 

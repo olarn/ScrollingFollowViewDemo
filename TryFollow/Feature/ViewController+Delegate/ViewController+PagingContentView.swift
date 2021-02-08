@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import PagingKit
+import UIKit
 
 extension ViewController: PagingContentViewControllerDataSource {
     func numberOfItemsForContentViewController(viewController: PagingContentViewController) -> Int {
@@ -20,8 +20,14 @@ extension ViewController: PagingContentViewControllerDataSource {
 
 extension ViewController: PagingContentViewControllerDelegate {
     func contentViewController(viewController: PagingContentViewController, didManualScrollOn index: Int, percent: CGFloat) {
-        // Need to tell scrollFollwingView to prevent it to reset position to zero
         scrollingFollowView.donotResetScrollingPosition()
         menuViewController.scroll(index: index, percent: percent, animated: false)
+
+        // #5. Add code to update overlay (mask)
+        
+        menuViewController.visibleCells.forEach {
+            let cell = $0 as! OverlayMenuCell
+            cell.updateMask()
+        }
     }
 }
