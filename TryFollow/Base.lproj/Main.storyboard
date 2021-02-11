@@ -69,6 +69,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myAccountLabel" destination="Avv-o2-dxa" id="w7u-7I-qgW"/>
                         <outlet property="scrollingFollowView" destination="jGa-Q3-A3g" id="zpv-uX-jMs"/>
                         <outlet property="topConstraint" destination="ht0-BJ-7jP" id="6Ih-eU-dWR"/>
                     </connections>

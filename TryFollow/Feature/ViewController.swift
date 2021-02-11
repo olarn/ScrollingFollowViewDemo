@@ -33,6 +33,8 @@ class ViewController: UIViewController {
 
     let tableViewController = UITableViewController()
     var tableView: UITableView!
+    @IBOutlet weak var myAccountLabel: UILabel!
+    
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollingFollowView: ScrollingFollowView!
     

@@ -24,10 +24,13 @@ open class ScrollingFollowView: UIView {
     private var pointOfStartingHiding: CGFloat = 0
     private var pointOfStartingShowing: CGFloat = 0
     
+    private let lockRatio: CGFloat = 1.3
     fileprivate var delayBuffer: CGFloat = 0
     
     open private(set) var allowHalfDisplay = false
 
+    var onScrolling: (() -> Void)?
+    
     open func setup(constraint cons: NSLayoutConstraint, maxFollowPoint: CGFloat, minFollowPoint: CGFloat, allowHalfDisplay: Bool = false) {
         constraint = cons
         self.maxFollowPoint = -maxFollowPoint
@@ -40,7 +43,11 @@ open class ScrollingFollowView: UIView {
         pointOfStartingShowing = showingPoint
     }
     
-    open func didScroll(_ scrollView: UIScrollView, parallaxRatio: CGFloat = 1.0) {
+    open func didScroll(_ scrollView: UIScrollView, parallaxRatio: CGFloat = 1.0, donotScrollIfFewContents: Bool = false) {
+        if donotScrollIfFewContents && contentSizeIsNotMuchGreaterThanSize(of: scrollView) {
+            return
+        }
+
         let currentPoint = -scrollView.contentOffset.y
         
         let differencePoint = currentPoint - previousPoint
@@ -83,10 +90,9 @@ open class ScrollingFollowView: UIView {
                 constraint.constant += differencePoint * ratio
             }
         }
-        
         layoutIfNeeded()
-        
         previousPoint = currentPoint
+        self.onScrolling?()
     }
     
     private var lastContentOffset: CGFloat = 0
@@ -96,15 +102,19 @@ open class ScrollingFollowView: UIView {
         self.lastContentOffset = scrollView.contentOffset.y
         return isUp
     }
+    
+    private func contentSizeIsNotMuchGreaterThanSize(of scrollView: UIScrollView) -> Bool {
+        return scrollView.contentSize.height < scrollView.frame.size.height * lockRatio
+    }
 
     func donotResetScrollingPosition() {
         lastContentOffset = -200
     }
     
     open func didEndScrolling(_ willDecelerate: Bool = false) {
-//        if !willDecelerate && !allowHalfDisplay {
+        if !willDecelerate && !allowHalfDisplay {
             showOrHideIfNeeded()
-//        }
+        }
     }
     
     private func showOrHideIfNeeded() {
@@ -113,6 +123,7 @@ open class ScrollingFollowView: UIView {
         } else {
             show(animated: true)
         }
+        self.onScrolling?()
     }
     
     private func isTopOrBottomEdge(_ scrollView: UIScrollView) -> Bool {

@@ -10,12 +10,16 @@ import UIKit
 extension ViewController: UITableViewDelegate {
     
     func setupScrollingFollowView() {
-        let scrollingFollowViewHeight = scrollingFollowView.frame.size.height
+        let scrollingFollowViewHeight = scrollingFollowView.frame.size.height - 95
         scrollingFollowView.setupDelayPoints(pointOfStartingHiding: 20, pointOfStartingShowing: 20)
         scrollingFollowView.setup(
             constraint: topConstraint,
-            maxFollowPoint: scrollingFollowViewHeight - 95,
+            maxFollowPoint: scrollingFollowViewHeight,
             minFollowPoint: 0)
+        
+        scrollingFollowView.onScrolling = {
+            self.myAccountLabel.alpha = 1 - abs(self.topConstraint.constant / scrollingFollowViewHeight)
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
